@@ -1,0 +1,25 @@
+# GitHub.io
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect</title>
+  <script>
+    // Короткие ссылки
+    const links = {
+      "HotMe": "https://llrbdj.flirtpllace.com/?utm_source=da57dc555e50572d&ban=tg&j1=1&s1=245474&s2=2214791"
+    };
+
+    // Получаем путь после домена
+    const path = location.pathname.replace(/^\/+|\/+$/g, "");
+
+    // Редирект или 404
+    if (links[path]) {
+      location.replace(links[path]);
+    } else {
+      document.write("404");
+    }
+  </script>
+</head>
+<body></body>
+</html>
